@@ -1,0 +1,9 @@
+export const vert_pool = `
+  varying vec3 vUv;
+  
+  void main() {
+    vUv = position;
+    vec4 mvp = modelViewMatrix * vec4(pos, 1.0);
+    gl_Position = projectionMatrix * mvp;
+  }
+`;

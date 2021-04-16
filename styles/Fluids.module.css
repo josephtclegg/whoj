@@ -1,0 +1,14 @@
+.fluids {
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 50%;
+}
+
+.noise {
+  position: relative;
+  display: flex;  
+  justify-content: center;
+}
