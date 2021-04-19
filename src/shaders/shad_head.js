@@ -4,7 +4,7 @@ export const vert_head = `
 
   void main() {
     vec3 pos = position;
-    pos = vec3(pos.x, pos.y+(8.0*sin(time+pos.x)), pos.z);
+    pos = vec3(pos.x+(pos.y/4.0), pos.y+(8.0*sin(time+pos.x)), pos.z);
     vUv - pos;
     vec4 mvp = modelViewMatrix * vec4(pos, 1.0);
     gl_Position = projectionMatrix * mvp;
