@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import VertexSinDemo from './demos/VertexSin';
 import Sin3Demo from './demos/Sin3';
+import Header from './demos/Header';
 import { vert_sinnoise, frag_sinnoise } from './shaders/shad_sinnoise';
 import { vert_sin3, frag_sin3 } from './shaders/shad_sin3';
 import Image from 'next/image';
