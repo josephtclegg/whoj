@@ -21,17 +21,15 @@ export default function Fluids() {
   const t6 = 'We haven\'t included much of a lighting model so that\'s probably where to go from here.';
 
   useEffect(() => {
-    if(typeof window !== 'undefined') {
       Prism.highlightAll();
-    }
   }, []);
 	
   return (
       <div className={styles.fluids}>
       <p>{t1}</p>
       <VertexSinDemo></VertexSinDemo>
-      <pre class="language-clike" >
-        <code>
+      <pre>
+        <code class="language-clike">
           {vert_sinnoise}
         </code>
       </pre>
@@ -43,12 +41,12 @@ export default function Fluids() {
       <p>{t4}</p>
       <Sin3Demo></Sin3Demo>
       <p>{t5}</p>
-      <pre class="language-clike">
-        <code>{vert_sin3}</code>
+      <pre>
+        <code class="language-clike">{vert_sin3}</code>
       </pre>
       <p>Vertex Shader</p>
-      <pre class="language-clike">
-        <code>{frag_sin3}</code>
+      <pre>
+        <code class="language-clike">{frag_sin3}</code>
       </pre>
       <p>Fragment Shader</p>
       <p>{t6}</p>

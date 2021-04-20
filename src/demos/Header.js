@@ -49,6 +49,7 @@ export default function Header() {
       setRendEl(renderer.domElement);
       mount.appendChild(renderer.domElement);
       controls.enableZoom = false;
+      controls.enabled = false;
       var material = new THREE.MeshNormalMaterial();
       material.side = THREE.DoubleSide;
 
