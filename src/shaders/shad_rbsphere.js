@@ -108,7 +108,7 @@ export const frag_rbsphere = `
       sin(zs-t),
       1.0-pow(smoothstep(0.0, 1.0, vUv.z), 10.0)
     );
-    vec4 color = myax;
+    vec4 color = yax;
     gl_FragColor = color;
   }
 `;
